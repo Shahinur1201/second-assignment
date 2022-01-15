@@ -72,13 +72,44 @@ body {
 span {
   margin-left: 10px;
 }
+.input-data {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff3c83;
+}
+
+footer > h3 {
+  padding-top: 25px;
+}
+footer {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-color: rgb(4, 4, 44);
+  margin-top: 20px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: 700;
+}
 
 @media only screen and (max-width: 688px) {
   .container {
     width: 100%;
   }
   .all-document {
-    background-color: red;
+    background-color: gray;
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .all-document {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: lightcoral;
+  }
+  .all-collection {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
