@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 15px;
+}
+.container {
+  margin-bottom: 20px;
+}
+
+.influencer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-side h1 {
+  font-size: 52px;
+  line-height: 70px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700px;
+}
+.all-collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+}
+
+.all-collection .product-details {
+  margin: 15px;
+}
+.products {
+  box-shadow: 10px 12px 30px gray;
+  border-radius: 5px;
+  width: 450px;
+  background-color: lemonchiffon;
+}
+.product-item {
+  padding-left: 15%;
+  padding-top: 5%;
+}
+.product-details {
+  padding-left: 15%;
+}
+
+.fas {
+  margin-left: 5px;
+}
+.load-more {
+  background-color: #e02c6d;
+  color: white;
+  padding: 8px 10px;
+  border: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.head-tittle {
+  text-align: center;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+.fa-star.empty {
+  color: gray;
+}
+span {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .all-document {
+    background-color: red;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
